@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Welcome to Multi User Calculator</h1>
+        <div class="grid">
+<div class="card">
+        <div class="calculator">
+            <input class="input" type="text" name="" id="screen" disabled="disabled">
+        <table class="tables">
+            <tr>
+            <td><button>(</button></td>
+            <td><button>)</button></td>
+            <td><button class ="other">CL</button></td>
+            <td ><button class ="evals" >AC</button></td>
+            </tr>
+            <tr>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                <td><button>9</button></td>
+                <td><button class ="evals">X</button></td>
+            </tr>
+            <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button class ="evals">-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button class ="evals">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>0</button></td>
+                        <td><button>.</button></td>
+                        <td><button>/</button></td>
+                        <td><button class ="evals">=</button></td>
+                        </tr>
+                    
+        </table>
+
+    </div>
+<h3 class="mUser">  For Multi Users open new Tab/Brower with  url http://localhost:3000/</h3>
+   
+</div>
+    <div>
+
+<h1 class="mar">Last 10 Calculations:</h1>
+      <table id= "display">
+        <tr>
+          <th></th>
+        </tr>
+
+      </table>
+  </div>
+</div>
+
+</div>
+
+    </div>
+    </div>
+
+<script src="/calculator.js"></script>
+</body>
+</html>
